@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Care</title>
+    <link rel="stylesheet" href="webst.css">
+</head>
+<body>
+    <header>
+        <h1>Animal Care Tips</h1>
+        <nav><li><a href="#blog">Blog</a></li>
+
+
+            <ul>
+                <li><a href="#dogs">Dogs</a></li>
+                <li><a href="#cats">Cats</a></li>
+                <li><a href="#birds">Birds</a></li>
+                <li><a href="#rabbits">rabbit</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="dogs">
+            <h2>Dog Care</h2>
+            <img src="dog.jpg" alt="Dog" class="animal-image">
+            <p>Dogs need regular exercise, proper diet, and social interaction.</p>
+            <button onclick="showTip('dog')">Get a Tip</button>
+            <p id="dogTip"></p>
+        </section>
+        <section id="cats">
+            <h2>Cat Care</h2>
+            <img src="cat.jpg2.png" alt="Cat" class="animal-image">
+            <p>Cats require mental stimulation and a balanced diet.</p>
+            <button onclick="showTip('cat')">Get a Tip</button>
+            <p id="catTip"></p>
+        </section>
+        <section id="birds">
+            <h2>Bird Care</h2>
+            <img src="bird.jpg1.png" alt="Birds" class="animal-image">
+            <p>Birds need a clean cage and a varied diet to thrive.</p>
+            <button onclick="showTip('bird')">Get a Tip</button>
+            <p id="birdTip"></p>
+        </section>
+        <section id="rabbits">
+            <h2>Rabbit Care</h2>
+            <img src="rabbit.jpg" alt="Rabbit" class="animal-image">
+            <p>Rabbits are herbivores and need a healthy diet of fresh hay and small amounts of food throughout the day.</p>
+            <button onclick="showTip('rabbit')">Get a Tip</button>
+            <p id="rabbitTip"></p>
+        </section>
+         <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contactForm" onsubmit="handleSubmit(event)">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Send Message</button>
+        </form>
+        <p id="formMessage"></p>
+    </section>
+    <section id="blog">
+        <h2>Blog</h2>
+        <article class="blog-post">
+            <h3><a href="blog1.html">5 Essential Tips for Dog Care</a></h3>
+            <p>Learn how to keep your furry friend happy and healthy with these essential tips...</p>
+            <p><small>Published on November 10, 2024</small></p>
+        </article>
+        <article class="blog-post">
+            <h3><a href="blog2.html">Understanding Cat Behavior</a></h3>
+            <p>Discover the reasons behind common cat behaviors and how to manage them...</p>
+            <p><small>Published on November 15, 2024</small></p>
+        </article>
+        <article class="blog-post">
+            <h3><a href="blog3.html">The Best Diet for Birds</a></h3>
+            <p>Find out what to feed your feathered friends to keep them healthy and happy...</p>
+            <p><small>Published on November 17, 2024</small></p>
+        </article>
+    </section>
+    <section id="map">
+        <h2>Our Location</h2>
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3410.748074314854!2d75.7022928750585!3d31.255396660186697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391a5f5e9c489cf3%3A0x4049a5409d53c300!2sLovely%20Professional%20University!5e0!3m2!1sen!2sin!4v1731856113918!5m2!1sen!2sin" width="400" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </iframe>
+    </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Animal Care</p>
+        <div class="contact-details">
+            <p>Email: <a href="mailto:info@animalcare.com">info@animalcare.com</a></p>
+            <p>Phone: <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+        </div>
+        <div class="social-media">
+            <!-- Social media links as before -->
+        </div>
+
+    </footer>
+    <section id="contact-info">
+        <h2>Contact Us</h2>
+        <p>Email: <a href="mailto:info@animalcare.com">info@animalcare.com</a></p>
+        <p>Phone: <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+        <p>Address: 123 Animal Care St, Pet City, CA 12345</p>
+    </section>
+ <script src="script.js"></script>
+</body>
+</html>
